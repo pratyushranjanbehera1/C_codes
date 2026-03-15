@@ -1,0 +1,37 @@
+<h1 class="h1">Sum of digits program in C</h1>
+<p>C program to sum each digit: We can write the sum of digits program in c language by the help of loop and mathematical operation only.</p>
+<h2 class="h3">Sum of digits algorithm</h2>
+<p>To get sum of each digits by c program, use the following algorithm:</p>
+<ul class="points">
+<li>Step 1: Get number by user</li>
+<li>Step 2: Get the modulus/remainder of the number</li>
+<li>Step 3: sum the remainder of the number</li>
+<li>Step 4: Divide the number by 10</li>
+<li>Step 5: Repeat the step 2 while number is greater than 0.</li>
+</ul>
+<p>Let's see the sum of digits program in C.</p>
+<div class="codeblock"><textarea name="code" class="Cpp">
+#include<stdio.h>
+ int main()  
+{  
+int n,sum=0,m;  
+printf("Enter a number:");  
+scanf("%d",&amp;n);  
+while(n>0)  
+{  
+m=n%10;  
+sum=sum+m;  
+n=n/10;  
+}  
+printf("Sum is=%d",sum);  
+return 0;
+} 
+
+</textarea></div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3"><pre>
+Enter a number:654
+Sum is=15
+
+Enter a number:123
+Sum is=6

@@ -1,0 +1,47 @@
+<h1 class="h1">C Program to swap two numbers without third variable</h1>
+<p>We can swap two numbers without using third variable. There are two common ways to swap two numbers without using third variable:</p>
+<ol class="points">
+<li>By + and -</li>
+<li>By * and /</li>
+</ol>
+<h2 class="h3">Program 1: Using + and -</h2>
+<p>Let's see a simple c example to swap two numbers without using third variable.</p>
+<div class="codeblock"><textarea name="code" class="Cpp">
+#include<stdio.h>
+ int main()  
+{  
+int a=10, b=20;    
+printf("Before swap a=%d b=%d",a,b);    
+a=a+b;//a=30 (10+20)  
+b=a-b;//b=10 (30-20)  
+a=a-b;//a=20 (30-10)  
+printf("\nAfter swap a=%d b=%d",a,b);  
+return 0;
+} 
+</textarea></div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3"><pre>
+Before swap a=10 b=20
+After swap a=20 b=10
+</pre></div>
+<h2 class="h3">Program 2: Using * and /</h2>
+<p>Let's see another example to swap two numbers using * and /.</p>
+<div class="codeblock"><textarea name="code" class="Cpp">
+#include<stdio.h>
+#include<stdlib.h>
+ int main()  
+{  
+int a=10, b=20;    
+printf("Before swap a=%d b=%d",a,b);     
+a=a*b;//a=200 (10*20)  
+b=a/b;//b=10 (200/20)  
+a=a/b;//a=20 (200/10)  
+ system("cls");
+printf("\nAfter swap a=%d b=%d",a,b);     
+return 0;
+} 
+</textarea></div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3"><pre>
+Before swap a=10 b=20
+After swap a=20 b=10

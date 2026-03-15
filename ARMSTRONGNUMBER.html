@@ -1,0 +1,61 @@
+<html>
+<head>
+	<title>ARMSTRONG NUMBER</title>
+</head>
+<body>
+<h1>Armstrong Number in C</h1>
+<p>Before going to write the c program to check whether the number is Armstrong or not, let's understand what is Armstrong number.</p>
+<p><strong>Armstrong number</strong> is <em>a number that is equal to the sum of cubes of its digits</em>. <br>For example 0, 1, 153, 370, 371 and 407 are the Armstrong numbers.</p>
+<p>Let's try to understand why <strong>153</strong> is an Armstrong number.</p>
+<code>
+153 = (1*1*1)+(5*5*5)+(3*3*3)
+where:
+(1*1*1)=1
+(5*5*5)=125
+(3*3*3)=27
+So:
+1+125+27=153
+</code>
+<p>Let's try to understand why <strong>371</strong> is an Armstrong number.</p>
+<code>
+371 = (3*3*3)+(7*7*7)+(1*1*1)
+where:
+(3*3*3)=27
+(7*7*7)=343
+(1*1*1)=1
+So:
+27+343+1=371
+</code>
+<p>Let's see the c program to check Armstrong Number in C.</p>
+<code><pre>
+#include<stdio.h>
+ int main()  
+{  
+int n,r,sum=0,temp;  
+printf("enter the number=");  
+scanf("%d",&amp;n);  
+temp=n;  
+while(n>0)  
+{  
+r=n%10;  
+sum=sum+(r*r*r);  
+n=n/10;  
+}  
+if(temp==sum)  
+printf("armstrong  number ");  
+else  
+printf("not armstrong number");  
+return 0;
+}
+</pre> 
+</code>
+<p><strong>Output:</strong></p>
+<code><pre>
+enter the number=153
+armstrong number
+
+enter the number=5
+not armstrong number
+</code></pre>
+</body>
+</html>

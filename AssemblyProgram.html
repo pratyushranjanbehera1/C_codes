@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Code Book Assembly program</title>
+</head>
+<Body>
+	<h1 class="h1">Assembly program in C</h1>
+	<p>We can write assembly program code inside c language program. In such case, all the assembly code must be placed inside asm{} block.</p>
+<p>Let's see a simple assembly program code to add two numbers in c program.</p>
+<code><pre>
+#include&lt;stdio.h&gt;
+void main() {
+   int a = 10, b = 20, c;
+ 
+   asm {
+      mov ax,a
+      mov bx,b
+      add ax,bx
+      mov c,ax
+   }
+   printf("c= %d",c);
+}
+</pre>
+</code>
+<p><strong>Output:</strong></p>
+<code><pre>
+c= 30
+</pre>
+</code>
+</body>
+</html>

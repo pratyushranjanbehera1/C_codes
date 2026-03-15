@@ -1,0 +1,40 @@
+<h1 class="h1">Palindrome program in C</h1>
+<p>Palindrome number in c: A <strong>palindrome number</strong> is <em>a number that is same after reverse</em>. For example 121, 34543, 343, 131, 48984 are the palindrome numbers.</p>
+<h2 class="h3">Palindrome number algorithm</h2>
+<ul class="points">
+<li>Get the number from user</li>
+<li>Hold the number in temporary variable</li>
+<li>Reverse the number</li>
+<li>Compare the temporary number with reversed number</li>
+<li>If both numbers are same, print palindrome number</li>
+<li>Else print not palindrome number</li>
+</ul>
+<p>Let's see the palindrome program in C. In this c program, we will get an input from the user and check whether number is palindrome or not.</p>
+<div class="codeblock"><textarea name="code" class="Cpp">
+#include<stdio.h>
+int main()  
+{  
+int n,r,sum=0,temp;  
+printf("enter the number=");  
+scanf("%d",&amp;n);  
+temp=n;  
+while(n>0)  
+{  
+r=n%10;  
+sum=(sum*10)+r;  
+n=n/10;  
+}  
+if(temp==sum)  
+printf("palindrome number ");  
+else  
+printf("not palindrome"); 
+return 0;
+} 
+</textarea></div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3"><pre>
+enter the number=151
+palindrome  number
+
+enter the number=5621
+not palindrome  number

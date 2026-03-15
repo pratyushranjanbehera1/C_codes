@@ -1,0 +1,42 @@
+<html>
+<head>
+	<title>Factorial Program in C</title>
+</head>
+<body>
+<h1>Factorial Program in C</h1>
+<p><strong>Factorial Program</strong> in C: Factorial of n is the <em>product of all positive descending integers</em>. Factorial of <em>n</em> is denoted by n!. For example:</p>
+<code>
+5! = 5*4*3*2*1 = 120
+3! = 3*2*1 = 6
+</code>
+<p>Here, 5! is pronounced as "5 factorial", it is also called "5 bang" or "5 shriek".</p>
+<p>The factorial is normally used in Combinations and Permutations (mathematics).</p>
+<p>There are many ways to write the factorial program in c language. Let's see the 2 ways to write the factorial program.</p>
+<ul class="points">
+<li>Factorial Program using loop</li>
+<li>Factorial Program using recursion</li>
+</ul>
+<h2>Factorial Program using loop</h2>
+<p>Let's see the factorial Program using loop.</p>
+<code><pre>
+#include<stdio.h>
+int main()  
+{  
+ int i,fact=1,number;  
+ printf("Enter a number: ");  
+  scanf("%d",&amp;number);  
+    for(i=1;i<=number;i++){  
+      fact=fact*i;  
+  }  
+  printf("Factorial of %d is: %d",number,fact);  
+return 0;
+} 
+</pre>
+</code>
+<p><strong>Output:</strong></p>
+<code><pre>
+Enter a number: 5
+Factorial of 5 is: 120
+</code></pre>
+</body>
+</html>

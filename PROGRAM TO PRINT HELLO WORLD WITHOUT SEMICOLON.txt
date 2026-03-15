@@ -1,0 +1,21 @@
+<h1 class="h1">C Program to print "hello" without semicolon</h1>
+<p>We can print "hello" or "hello world" or anything else in C without using semicolon. There are various ways to do so:</p>
+<ol class="points">
+<li>Using if</li>
+<li>Using switch</li>
+<li>Using loop etc.</li>
+</ol>
+<h2 class="h3">Program 1: Using if statement</h2>
+<p>Let's see a simple c example to print "hello world" using if statement and without using semicolon.</p>
+<div class="codeblock"><textarea name="code" class="Cpp">
+#include<stdio.h>
+ int main()  
+{  
+ if(printf("hello world")){}  
+return 0;
+} 
+
+</textarea></div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3"><pre>
+hello world
